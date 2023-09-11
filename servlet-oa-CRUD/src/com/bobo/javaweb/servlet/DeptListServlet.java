@@ -71,7 +71,7 @@ public class DeptListServlet extends HttpServlet {
                 out.print("		<td>"+dname+"</td>");
                 out.print("		<td>");
                 out.print("			<a href='javascript:void(0)' onclick='del("+deptno+")'>删除</a>");
-                out.print("			<a href='"+contextPath+"/update.html'>修改</a>");
+                out.print("			<a href='"+contextPath+"/dept/modify?deptno="+deptno+"'>修改</a>");
                 out.print("			<a href='"+contextPath+"/dept/detail?deptno="+deptno+"'>详情</a>");
                 out.print("		</td>");
                 out.print("	</tr>");

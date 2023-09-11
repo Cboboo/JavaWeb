@@ -24,8 +24,8 @@ import java.sql.ResultSet;
 public class DeptUpdateServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String contextPath = request.getContextPath();
         request.setCharacterEncoding("UTF-8");
+        String contextPath = request.getContextPath();
         int deptno = Integer.parseInt(request.getParameter("deptno"));
         String dname = request.getParameter("dname");
         String loc = request.getParameter("loc");
